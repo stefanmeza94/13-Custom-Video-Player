@@ -63,10 +63,3 @@ body {
 	transition: transform .2s;
 }
 
-.fs-button {
-	background: rgba(0, 0, 0, 0.5);
-	color: white;
-	border: 1px solid white;
-	cursor: pointer;
-}
-
