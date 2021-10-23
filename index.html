@@ -4,10 +4,36 @@
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
 		<link rel="stylesheet" href="style.css">
 		<title>Custom Video Player</title>
 	</head>
 	<body>
+		
+		<div class="container">
+			<div class="video-wrapper js-video-wrapper">
+				
+				<video class="video js-video">
+					<source src="./assets/video.mp4" type="video/mp4">
+				</video>
+				<div class="controls-wrapper js-controls-wrapper">
+					<div class="progress-wrapper">
+						<input type="range" value="0" class="progress js-progress">
+					</div>
+					<button class="btn play-btn js-play-btn"><i class="fa fa-play"></i></button>
+					<button class="btn js-speeds" data-speed="0.5">0.5</button>
+					<button class="btn js-speeds" data-speed="0.75">0.75</button>
+					<button class="btn js-speeds" data-speed="1">1</button>
+					<button class="btn js-speeds" data-speed="1.5">1.5</button>
+					<button class="btn js-speeds" data-speed="2">2</button>
+					<button class="btn js-muted" data-speed="2">Mute</button>
+					<div class="volumeWrapper">
+						<input type="range" min="0" max="100" value="100" class="js-volume-slider">
+					</div>
+					<button class="fs-button js-fs-button">FS</button>
+				</div>
+			</div>
+		</div>
 		
 		<script src="script.js"></script>
 	</body>
